@@ -4,7 +4,8 @@ h1{
 body{
     background-color : greenyellow
 }
-#result{
+/* ================================FLOW-TRANSDUCER============================================ */
+#flow-result{
     background-color: yellow;
     width: 230px;
     height: 200px;
@@ -16,3 +17,19 @@ body{
     height: 150px;
     padding: 10px;
 }
+/* ================================FLOW-TRANSDUCER============================================ */
+
+/* ================================LEVEL-TRANSDUCER============================================ */
+#level-result{
+    background-color: yellow;
+    width: 230px;
+    height: 200px;
+    padding: 10px;
+}
+#level-info{
+    background-color: cyan;
+    width: 190px;
+    height: 150px;
+    padding: 10px;
+}
+/* ================================LEVEL-TRANSDUCER============================================ */
