@@ -5,10 +5,21 @@ document.addEventListener('DOMContentLoaded',function (){
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            const flow_sensor_id = document.querySelector('#flow_sensor_id').value;
+            let flow_sensor_id = document.querySelector('#flow_sensor_id').value;
+            let sensor_name = data[flow_sensor_id].name;
+            let sensor_types = data[flow_sensor_id].type;
+            let sensor_unit = data[flow_sensor_id].unit;
+            let sensor_range = data[flow_sensor_id].range;
+            // let sensor_plant = data[flow_sensor_id].plant-site;
             let sensor_value = data[flow_sensor_id].value;
             if(sensor_value !== undefined){
-                document.querySelector('#result').innerHTML = `Sensor value = ${sensor_value} `;
+                document.querySelector('#result').innerHTML = `**FLOW-Sensor ${flow_sensor_id}** 
+                                                                        <br>${sensor_name}.</br> 
+                                                                            ${sensor_types}.</br>
+                                                                            ${sensor_unit}.</br>
+                                                                            ${sensor_range}.</br>
+                                                                            
+                                                                            ${sensor_value}.</br> `;
             }
             else{
                 document.querySelector('#result').innerHTML = "Invalid.";
