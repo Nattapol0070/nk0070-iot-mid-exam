@@ -10,19 +10,19 @@ document.addEventListener('DOMContentLoaded',function (){
             let sensor_types = data[flow_sensor_id].type;
             let sensor_unit = data[flow_sensor_id].unit;
             let sensor_range = data[flow_sensor_id].range;
-            // let sensor_plant = data[flow_sensor_id].plant-site;
+            let sensor_plant = data[flow_sensor_id]["plant-site"];
             let sensor_value = data[flow_sensor_id].value;
-            if(sensor_value !== undefined){
-                document.querySelector('#result').innerHTML = `**FLOW-Sensor ${flow_sensor_id}** 
-                                                                        <br>${sensor_name}.</br> 
-                                                                            ${sensor_types}.</br>
-                                                                            ${sensor_unit}.</br>
-                                                                            ${sensor_range}.</br>
-                                                                            
-                                                                            ${sensor_value}.</br> `;
+            if(flow_sensor_id !== undefined){
+                document.querySelector('#flow-info').innerHTML = `**FLOW-Sensor-ID : ${flow_sensor_id}** 
+                                                                        <br>Name : ${sensor_name}.</br> 
+                                                                            Type : ${sensor_types}.</br>
+                                                                            Unit : ${sensor_unit}.</br>
+                                                                            Range : ${sensor_range}.</br>
+                                                                            Plant-site : ${sensor_plant}.</br>
+                                                                            Value : ${sensor_value}</br> `;
             }
             else{
-                document.querySelector('#result').innerHTML = "Invalid.";
+                document.querySelector('#flow-info').innerHTML = "Invalid.";
             }
         })
         .catch(error => {

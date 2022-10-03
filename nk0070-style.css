@@ -4,3 +4,15 @@ h1{
 body{
     background-color : greenyellow
 }
+#result{
+    background-color: yellow;
+    width: 230px;
+    height: 200px;
+    padding: 10px;
+}
+#flow-info{
+    background-color: cyan;
+    width: 190px;
+    height: 150px;
+    padding: 10px;
+}
