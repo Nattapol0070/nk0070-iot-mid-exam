@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded',function (){
                                                                             Unit : ${flow_sensor_unit}.</br>
                                                                             Range : ${flow_sensor_range}.</br>
                                                                             Plant-site : ${flow_sensor_plant}.</br>
-                                                                            Value : ${flow_sensor_value}</br> `;
+                                                                            Value : ${flow_sensor_value}</br> `; //show data on page
             }
             else{
                 document.querySelector('#flow-info').innerHTML = "Invalid.";
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded',function (){
                                                                             Unit : ${level_sensor_unit}.</br>
                                                                             Range : ${level_sensor_range}.</br>
                                                                             Plant-site : ${level_sensor_plant}.</br>
-                                                                            Value : ${level_sensor_value}</br> `;
+                                                                            Value : ${level_sensor_value}</br> `; //show data on page
             }
             else{
                 document.querySelector('#level-info').innerHTML = "Invalid.";
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded',function (){
                                                                             Unit : ${temp_sensor_unit}.</br>
                                                                             Range : ${temp_sensor_range}.</br>
                                                                             Plant-site : ${temp_sensor_plant}.</br>
-                                                                            Value : ${temp_sensor_value}</br> `;
+                                                                            Value : ${temp_sensor_value}</br> `; //show data on page
             }
             else{
                 document.querySelector('#temp-info').innerHTML = "Invalid.";
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded',function (){
                                                                             Unit : ${pres_sensor_unit}.</br>
                                                                             Range : ${pres_sensor_range}.</br>
                                                                             Plant-site : ${pres_sensor_plant}.</br>
-                                                                            Value : ${pres_sensor_value}</br> `;
+                                                                            Value : ${pres_sensor_value}</br> `; //show data on page
             }
             else{
                 document.querySelector('#pres-info').innerHTML = "Invalid.";
@@ -135,4 +135,34 @@ document.addEventListener('DOMContentLoaded',function (){
         return false;
     }
     //  ================================ PRESSURE-TRANSDUCER ============================================
+
+    //  ================================ POST - DATA ====================================================
+    let PostFormData = document.getElementById('post-form')
+    PostFormData.addEventListener('submit', function(e){
+        e.preventDefault();
+        let st_id = document.getElementById('st_id').value;
+        let st_name = document.getElementById('st_name').value;
+        let sensor_name = document.getElementById('sensor_name').value;
+        let sensor_type = document.getElementById('sensor_type').value;
+        let sensor_unit = document.getElementById('sensor_unit').value;
+        let sensor_value = document.getElementById('sensor_value').value;
+
+        fetch('https://midterm-exam-010723313-2022.herokuapp.com/student_post',{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                "st_id": st_id,
+                "st_name": st_name,
+                "sensor_name": sensor_name,
+                "sensor_type": sensor_type,
+                "sensor_unit": sensor_unit,
+                "sensor_value": sensor_value,
+            })
+        })
+        .then(response => console.log(response))
+        .catch(error => console.log(error));
+    })
+    //  ================================ POST - DATA ====================================================
 });
