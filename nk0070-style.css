@@ -4,82 +4,25 @@ h1{
 body{
     background-color : greenyellow
 }
-#container {
+/* #container {
     display: flex;
     flex-wrap: wrap;
+} */
+/* ================================ FLOW-TRANSDUCER ============================================ */
+#sensor_result{
+    text-align: center;
+    background-color: yellow;
+    width: 230px;
+    height: 250px;
+    padding: 5px;
+    margin: 20px;
+}
+#sensor_info{
+    text-align: center;
+    background-color: cyan;
+    width: 200px;
+    height: 140px;
+    padding: 5px;
+    margin: 10px;
 }
 /* ================================ FLOW-TRANSDUCER ============================================ */
-#flow-result{
-    text-align: center;
-    background-color: yellow;
-    width: 230px;
-    height: 250px;
-    padding: 5px;
-    margin: 20px;
-}
-#flow-info{
-    text-align: center;
-    background-color: cyan;
-    width: 200px;
-    height: 140px;
-    padding: 5px;
-    margin: 10px;
-}
-/* ================================ FLOW-TRANSDUCER ============================================ */
-
-/* ================================ LEVEL-TRANSDUCER ============================================ */
-#level-result{
-    text-align: center;
-    background-color: yellow;
-    width: 230px;
-    height: 250px;
-    padding: 5px;
-    margin: 20px;
-}
-#level-info{
-    text-align: center;
-    background-color: cyan;
-    width: 200px;
-    height: 140px;
-    padding: 5px;
-    margin: 10px;
-}
-/* ================================ LEVEL-TRANSDUCER ============================================ */
-
-/* ================================ TEMPERATURE-TRANSDUCER ============================================ */
-#temp-result{
-    text-align: center;
-    background-color: yellow;
-    width: 230px;
-    height: 250px;
-    padding: 5px;
-    margin: 20px;
-}
-#temp-info{
-    text-align: center;
-    background-color: cyan;
-    width: 200px;
-    height: 140px;
-    padding: 5px;
-    margin: 10px;
-}
-/* ================================ TEMPERATURE-TRANSDUCER ============================================ */
-
-/* ================================ PRESSURE-TRANSDUCER ============================================ */
-#pres-result{
-    text-align: center;
-    background-color: yellow;
-    width: 230px;
-    height: 250px;
-    padding: 5px;
-    margin: 20px;
-}
-#pres-info{
-    text-align: center;
-    background-color: cyan;
-    width: 200px;
-    height: 140px;
-    padding: 5px;
-    margin: 10px;
-}
-/* ================================ PRESSURE-TRANSDUCER ============================================ */
