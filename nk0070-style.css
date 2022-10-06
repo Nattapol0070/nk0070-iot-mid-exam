@@ -1,28 +1,19 @@
-h1{
-    text-align: center;
-}
-body{
-    background-color : greenyellow
-}
-/* #container {
-    display: flex;
-    flex-wrap: wrap;
-} */
-/* ================================ FLOW-TRANSDUCER ============================================ */
+body {
+    background: url('JYXVOG.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
 #sensor_result{
-    text-align: center;
-    background-color: yellow;
-    width: 230px;
-    height: 250px;
-    padding: 5px;
-    margin: 20px;
+    width: 350px;
+    height: 350px;
 }
-#sensor_info{
-    text-align: center;
-    background-color: cyan;
-    width: 200px;
-    height: 140px;
-    padding: 5px;
-    margin: 10px;
-}
-/* ================================ FLOW-TRANSDUCER ============================================ */
+
+  
+  .bg-image {
+    background-image: url('citypopcar.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
