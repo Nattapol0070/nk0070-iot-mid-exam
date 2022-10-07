@@ -9,72 +9,79 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
     <body>
-        <!-- ================================ HEADER ============================================ -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
-            <div class="container">
-              <a class="navbar-brand" href="#">Start Bootstrap</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
+        <!-- ================================ TOP ============================================ -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-5 shadow">
+          <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-wifi"></i> Internet of Things Midterm Exam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/Nattapol0070/nk0070-iot-mid-exam"><i class="bi bi-github"></i> Github</a>
+                </li>
+              </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
+        <!-- ================================ TOP ============================================ -->
 
-
-        
-          <!-- ================================ HEADER ============================================ -->
-
-                <!-- ================================ SENSOR-TRANSDUCER ============================================ -->
-                <div id = "sensor_result" class="container h-100">
-                    <p class="text-center h3 fw-light">GET Sensor Data</p>
-                    <form id="sensor_test">
-                        <div class="input-group">
-                            <select id="sensor_select" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                                <option value="flow-transducer">Flow-transducer</option>
-                                <option value="level-transducer">Level-transducer</option>
-                                <option value="temperature-transducer">Temperature-transducer</option>
-                                <option value="pressure-transducer">Pressure-transducer</option>
-                            </select>
-                            <button type="submit" class="btn btn-warning">Search</button>
+        <!-- ================================ SENSOR Slide Pic ============================================ -->
+                  <!-- Page Content -->
+                  <hr class="mt-5 mb-5">
+                  <div class="container">
+                    <div class="row">
+                      <!-- Team Member 1 -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                          <img src="flow.jpg" class="card-img-top" alt="flow-transducer">
+                          <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Flow Transducer</h5>
+                            <div class="card-text text-black-50">Type : Coirolis : Magnetic : Vortex</div>
                           </div>
-                    </form>
-
-                    <form id="sensor_form" class="text-center was-validated">
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="text-center form-check-input" id="sensor_id" value="0" name="radio-stacked" required>
-                            <label class="form-check-label" for="validationFormCheck3">ID:0</label>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="text-center form-check-input" id="sensor_id" value="1" name="radio-stacked" required>
-                            <label class="form-check-label" for="validationFormCheck3">ID:1</label>
+                      </div>
+                      <!-- Team Member 2 -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                          <img src="level.jpg" class="card-img-top" alt="level-transducer">
+                          <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Level Transducer</h5>
+                            <div class="card-text text-black-50">Type : Ultrasonic : Radar : Capacitive</div>
+                          </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="text-center form-check-input" id="sensor_id" value="2" name="radio-stacked" required>
-                            <label class="form-check-label" for="validationFormCheck3">ID:2</label>
+                      </div>
+                      <!-- Team Member 3 -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                          <img src="temp.jpg" class="card-img-top" alt="temp-transducer">
+                          <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Temperature Transducer</h5>
+                            <div class="card-text text-black-50">Type : RTD : Thermocouple</div>
+                          </div>
                         </div>
-                    </form>
-
-                    <div id="sensor_info">
-
+                      </div>
+                      <!-- Team Member 4 -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow">
+                          <img src="pres.png" class="card-img-top" alt="...">
+                          <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Pressure Transducer</h5>
+                            <div class="card-text text-black-50">Type : Strain-gauge : Capacitive</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <!-- ================================ SENSOR-TRANSDUCER ============================================ -->
-            
+                    <!-- /.row -->
+
+                  </div>
+                  <!-- /.container -->
+        <!-- ================================ SENSOR Slide Pic ============================================ -->
+
             <!-- ================================ POST DATA ======================================== -->
             <div class="container-fluid px-5 my-5">
                 <div class="row justify-content-center">
@@ -82,60 +89,109 @@
                     <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
                       <div class="card-body p-0">
                         <div class="row g-0">
-                          <div class="col-sm-6 d-none d-sm-block bg-image"></div>
+
+                          <div class="col-sm-6 d-sm-block bg-image">
+                            <!-- ================================ SENSOR-TRANSDUCER ============================================ --> 
+                            <div class="container-fluid px-5 my-5">
+                              <div class="row justify-content-center">
+                                <div class="col-xl-10">
+                                  <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+                                    <div class="card-body p-4">
+                                      <div class="row g-0">
+                            
+                                        <div id = "sensor_result" class="container h-100">
+                                          <div class="text-center">
+                                            <div class="h3 fw-light">GET-Sensor Data</div>
+                                            <p class="mb-4 text-muted">Select Sensor type and ID</p>
+                                          </div>
+                                          <form id="sensor_get">
+                                              <div class="input-group">
+                                                  <select id="sensor_select" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                      <option value="flow-transducer">Flow-transducer</option>
+                                                      <option value="level-transducer">Level-transducer</option>
+                                                      <option value="temperature-transducer">Temperature-transducer</option>
+                                                      <option value="pressure-transducer">Pressure-transducer</option>
+                                                  </select>
+                                                  <button type="submit" class="btn btn-warning">Search</button>
+                                              </div>
+                                          </form>
+
+                                      <div class="card-body p-2">
+                                        <form id="sensor_form" class="text-center was-validated">
+                                          <div class="form-check form-check-inline">
+                                              <input type="radio" class="text-center form-check-input" id="sensor_id" value="0" name="radio-stacked" required>
+                                              <label class="form-check-label" for="validationFormCheck3">ID: 0</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                              <input type="radio" class="text-center form-check-input" id="sensor_id" value="1" name="radio-stacked" required>
+                                              <label class="form-check-label" for="validationFormCheck3">ID: 1</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                              <input type="radio" class="text-center form-check-input" id="sensor_id" value="2" name="radio-stacked" required>
+                                              <label class="form-check-label" for="validationFormCheck3">ID: 2</label>
+                                          </div>
+                                        </form>
+                                      </div>
+                                            
+                                        </div>
+                                      <div class="text-left" id="sensor_info"></div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>    
+
+                          </div>
+                          <!-- ================================ SENSOR-TRANSDUCER ============================================ -->
                           <div class="col-sm-6 p-4">
                             <div class="text-center">
                               <div class="h3 fw-light">POST-DATA</div>
                               <p class="mb-4 text-muted">Enter your data to server</p>
                             </div>
               
-                            <form id="post_form" method="POST" >
+                            <form id="post_form" method="POST">
               
                               <!-- Student-id Input -->
                               <div class="form-floating mb-3">
-                                <input class="form-control" id="st_id" value="" type="text" placeholder="Student-id" data-sb-validations="required" />
-                                <label for="name">Student-id</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Student-id is required.</div>
+                                <input class="form-control" id="st_id" value="" type="text" placeholder="Student-id" required/>
+                                <label for="name"><i class="bi bi-fingerprint"></i> Student Id</label>
                               </div>
 
                               <!-- Student-name Input -->
                               <div class="form-floating mb-3">
-                                <input class="form-control" id="st_name" value="" type="text" placeholder="Student-name" data-sb-validations="required" />
-                                <label for="name">Student-name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Student-name is required.</div>
+                                <input class="form-control" id="st_name" value="" type="text" placeholder="Student-name" required/>
+                                <label for="name"><i class="bi bi-person-circle"></i> Student Name</label>
                               </div>
 
                               <!-- Sensor-name Input -->
                               <div class="form-floating mb-3">
-                                <input class="form-control" id="sensor_name" value="" type="text" placeholder="Sensor-name" data-sb-validations="required" />
-                                <label for="name">Sensor-name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Sensor-name is required.</div>
+                                <input class="form-control" id="sensor_name" value="" type="text" placeholder="Sensor-name" required/>
+                                <label for="name"><i class="bi bi-cpu"></i> Sensor Name</label>
                               </div>
 
                               <!-- Sensor-type Input -->
                               <div class="form-floating mb-3">
-                                <input class="form-control" id="sensor_type" value="" type="text" placeholder="Sensor-type" data-sb-validations="required" />
-                                <label for="name">Sensor-type</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Sensor-type is required.</div>
+                                <input class="form-control" id="sensor_type" value="" type="text" placeholder="Sensor-type" required/>
+                                <label for="name"><i class="bi bi-gear"></i> Sensor Type</label>
                               </div>
 
                               <!-- Sensor-unit Input -->
                               <div class="form-floating mb-3">
-                                <input class="form-control" id="sensor_unit" value="" type="text" placeholder="Sensor-unit" data-sb-validations="required" />
-                                <label for="name">Sensor-unit</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Sensor-unit is required.</div>
+                                <input class="form-control" id="sensor_unit" value="" type="text" placeholder="Sensor-unit" required/>
+                                <label for="name"><i class="bi bi-clipboard-plus"></i> Sensor Unit</label>
                               </div>
 
                               <!-- Sensor-value Input -->
                               <div class="form-floating mb-3">
-                                <input class="form-control" id="sensor_value" value="" type="text" placeholder="Sensor-value" data-sb-validations="required" />
-                                <label for="name">Sensor-value</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Sensor-value is required.</div>
+                                <input class="form-control" id="sensor_value" value="" type="text" placeholder="Sensor-value" required/>
+                                <label for="name"><i class="bi bi-wrench-adjustable"></i> Sensor Value</label>
                               </div>
 
                               <!-- Submit button -->
                               <div class="d-grid">
-                                <button type="submit" value ="Create" class="btn btn-primary btn-lg disabled" id="submitButton">Submit</button>
+                                <button type="submit" value ="Create" class="btn btn-primary fw-bold" id="submitButton"><i class="bi bi-cloud-arrow-up-fill"></i> Submit</button>
                               </div>
                             </form>
                           </div>
@@ -149,13 +205,13 @@
 
             <!-- ================================ BOTTOM ======================================== -->
             <footer id="sticky-footer" class="flex-shrink-0 py-3 bg-white text-gray-50">
-                <div class="container text-center">
-                  <small>Copyright &copy; Your Website</small>
-                </div>
-              </footer>
+              <div class="container text-center">
+                <small>Copyright &copy; Internet of Things by Nattapol-0070</small>
+              </div>
+            </footer>
               <!-- ================================ BOTTOM ======================================== -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="nk0070-script.js"></script>
     </body>
 </html>

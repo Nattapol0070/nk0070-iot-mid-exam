@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',function (){
 
     //  ================================ GET - SENSOR - TRANSDUCER ============================================
-    document.getElementById("sensor_test").onsubmit = function (){
+    document.getElementById("sensor_get").onsubmit = function (){
 
         let sensor_select = document.querySelector('#sensor_select')?.value;
 
@@ -18,17 +18,17 @@ document.addEventListener('DOMContentLoaded',function (){
             let sensor_value = data[sensor_id]?.value;
             if(data[sensor_id] !== undefined){
                 document.querySelector('#sensor_info').innerHTML = `<ul class="list-group">
-                                                                        <li class="list-group-item active" aria-current="true">Sensor-ID : ${sensor_id}.</li>
-                                                                        <li class="list-group-item">Name : ${sensor_name}.</li>
-                                                                        <li class="list-group-item">Type : ${sensor_types}.</li>
-                                                                        <li class="list-group-item">Unit : ${sensor_unit}.</li>
-                                                                        <li class="list-group-item">Range : ${sensor_range}.</li>
-                                                                        <li class="list-group-item">Plant-site : ${sensor_plant}.</li>
+                                                                        <li class="list-group-item active text-center" aria-current="true">Sensor-ID : ${sensor_id}</li>
+                                                                        <li class="list-group-item">Name : ${sensor_name}</li>
+                                                                        <li class="list-group-item">Type : ${sensor_types}</li>
+                                                                        <li class="list-group-item">Unit : ${sensor_unit}</li>
+                                                                        <li class="list-group-item">Range : ${sensor_range}</li>
+                                                                        <li class="list-group-item">Plant-site : ${sensor_plant}</li>
                                                                         <li class="list-group-item">Value : ${sensor_value}</li>
                                                                     </ul>`;
             }
             else{
-                document.querySelector('#sensor_info').innerHTML = "No-Data.";
+                document.querySelector('#sensor_info').innerHTML = `<div class="text-center">No-Data</div>`;
             }
         })
         .catch(error => {
@@ -64,8 +64,10 @@ document.addEventListener('DOMContentLoaded',function (){
                 "sensor_value": sensor_value,
             })
         })
-        .then(response => console.log(response))
+        .then(res => console.log(res))
+        swal("Success!", "Post data Done!", "success")
         .catch(error => console.log(error));
+        // alert("Post data success!");
     })
     //  ================================ POST - DATA =====================================================
 

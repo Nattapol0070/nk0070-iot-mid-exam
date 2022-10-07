@@ -1,19 +1,22 @@
 body {
-    background: url('JYXVOG.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  }
-#sensor_result{
-    width: 350px;
-    height: 350px;
+  background: url('main_remastered.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
-
-  
-  .bg-image {
-    background-image: url('citypopcar.jpg');
-    background-size: 100%;
+.bg-image {
+    background-image: url('JYXVOG.png');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
