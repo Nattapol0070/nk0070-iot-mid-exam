@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',function (){
 
-    //  ================================ GET - SENSOR - TRANSDUCER ============================================
+    //  ================================ GET - SENSOR - TRANSDUCER ======================================
     document.getElementById("sensor_get").onsubmit = function (){
 
         let sensor_select = document.querySelector('#sensor_select')?.value;
@@ -8,16 +8,16 @@ document.addEventListener('DOMContentLoaded',function (){
         fetch(`https://midterm-exam-010723313-2022.herokuapp.com/device?sensor_type=${sensor_select}`)
         .then(response => response.json())
         .then(data => {
-            console.log(data); // log data => inspect
+            console.log(data);
             let sensor_id = document.querySelector('#sensor_id:checked')?.value;
-            let sensor_name = data[sensor_id]?.name; //sensor data location
+            let sensor_name = data[sensor_id]?.name;
             let sensor_types = data[sensor_id]?.type;
             let sensor_unit = data[sensor_id]?.unit;
             let sensor_range = data[sensor_id]?.range;
             let sensor_plant = data[sensor_id]?.["plant-site"];
             let sensor_value = data[sensor_id]?.value;
             if(data[sensor_id] !== undefined){
-                document.querySelector('#sensor_info').innerHTML = `<ul class="list-group">
+                document.querySelector('#sensor_info').innerHTML = `<ul class="list-group rounded-5 shadow">
                                                                         <li class="list-group-item active text-center" aria-current="true">Sensor-ID : ${sensor_id}</li>
                                                                         <li class="list-group-item">Name : ${sensor_name}</li>
                                                                         <li class="list-group-item">Type : ${sensor_types}</li>
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded',function (){
 
         return false;
     }
-    //  ================================ GET - SENSOR - TRANSDUCER ============================================
+    //  ================================ GET - SENSOR - TRANSDUCER ======================================
 
     //  ================================ POST - DATA ====================================================
     let PostFormData = document.getElementById('post_form')
@@ -66,8 +66,9 @@ document.addEventListener('DOMContentLoaded',function (){
         })
         .then(res => console.log(res))
         swal("Success!", "Post data Done!", "success")
-        .catch(error => console.log(error));
-        // alert("Post data success!");
+        .catch(error => {
+            console.log('Error:', error);
+        });
     })
     //  ================================ POST - DATA =====================================================
 
