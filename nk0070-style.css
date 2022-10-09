@@ -1,13 +1,13 @@
 body {
   font-family: "-apple-system, BlinkMacSystemFont, sans-serif";
-  background: url('main_remastered.png') no-repeat center center fixed;
+  background: url('citypop.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .bg-image {
-    background-image: url('JYXVOG.png');
+    background-image: url('main_remastered.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
